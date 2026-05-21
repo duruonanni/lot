@@ -1,0 +1,10 @@
+{
+  "name": "lgfs-lot-tool-gate",
+  "version": "0.1.3",
+  "private": true,
+  "description": "LGFS LOT AI tool gate - bilingual static directory for DT-built AI tools",
+  "scripts": {
+    "build": "node scripts/sync_version.mjs",
+    "preview": "npx --yes serve . -p 3456"
+  }
+}

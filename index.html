@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LGFS LOT AI Tool Gate — AI tools built by DT for the LGFS LOT team." />
+  <title>LGFS LOT AI Tool Gate</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-top">
+        <div>
+          <div class="hero-rule"></div>
+          <h1 id="hero-title">LGFS LOT AI Tool Gate</h1>
+          <p id="hero-subtitle">AI tools built by DT for the LGFS LOT team.</p>
+        </div>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="Summary">
+      <article class="stat-card">
+        <div class="stat-label" data-stat-label="toolCount">Tools</div>
+        <div class="stat-value" id="stat-tool-count">—</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label" data-stat-label="categoryCount">Categories</div>
+        <div class="stat-value" id="stat-category-count">—</div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-label" data-stat-label="lastUpdated">Last updated</div>
+        <div class="stat-value" id="stat-last-updated">—</div>
+      </article>
+    </section>
+
+    <nav class="tabs" id="category-tabs" aria-label="Categories"></nav>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2 class="panel-title" id="panel-title">AI tools</h2>
+          <div class="panel-meta" id="panel-meta">Select a tool to open its hosted application.</div>
+        </div>
+        <label class="visually-hidden" for="tool-search">Search tools</label>
+        <input class="search" type="search" id="tool-search" placeholder="Search tools…" autocomplete="off" />
+      </div>
+
+      <div class="tool-grid" id="tool-grid" aria-live="polite"></div>
+    </section>
+
+    <footer class="site-footer">
+      <p id="footer-disclaimer">Lenovo-inspired enterprise style — not an official Lenovo brand page.</p>
+      <p id="footer-version">Version 0.1.0</p>
+    </footer>
+  </div>
+
+  <script src="assets/version.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "lastUpdated": "2026-05-21",
+    "maintainer": "DT"
+  },
+  "tools": [
+    {
+      "id": "invoice-extractor",
+      "category": "validation",
+      "status": "ga",
+      "url": "https://invoice-extractor-tool.netlify.app",
+      "owner": "DT",
+      "name": {
+        "en": "Lenovo EaaS Invoice Validator",
+        "zh": "联想 EaaS 发票校验工具"
+      },
+      "summary": {
+        "en": "Browser-local PDF invoice validation and Excel export for EaaS statements.",
+        "zh": "在浏览器本地校验 EaaS 发票 PDF 并导出 Excel。"
+      },
+      "tags": ["pdf", "validation", "offline-capable"]
+    }
+  ]
+}

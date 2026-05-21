@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": {
+      "en": "LGFS LOT AI Tool Gate",
+      "zh": "LGFS LOT AI 工具导览"
+    },
+    "subtitle": {
+      "en": "AI tools built by DT for the LGFS LOT team.",
+      "zh": "DT 团队为 LGFS LOT 团队开发的 AI 工具入口。"
+    }
+  },
+  "langToggle": {
+    "en": "EN",
+    "zh": "中文"
+  },
+  "kpi": {
+    "toolCount": { "en": "Tools", "zh": "工具数" },
+    "categoryCount": { "en": "Categories", "zh": "分类数" },
+    "lastUpdated": { "en": "Last updated", "zh": "最近更新" }
+  },
+  "panel": {
+    "title": { "en": "AI tools", "zh": "AI 工具" },
+    "meta": {
+      "en": "Select a tool to open its hosted application.",
+      "zh": "选择工具以打开对应的应用页面。"
+    }
+  },
+  "searchPlaceholder": {
+    "en": "Search tools…",
+    "zh": "搜索工具…"
+  },
+  "categories": {
+    "all": { "en": "All", "zh": "全部" },
+    "validation": { "en": "Validation", "zh": "校验" },
+    "extraction": { "en": "Extraction", "zh": "提取" },
+    "analysis": { "en": "Analysis", "zh": "分析" },
+    "automation": { "en": "Automation", "zh": "自动化" },
+    "other": { "en": "Other", "zh": "其他" }
+  },
+  "status": {
+    "pilot": { "en": "Pilot", "zh": "试点" },
+    "ga": { "en": "GA", "zh": "正式版" },
+    "deprecated": { "en": "Deprecated", "zh": "已弃用" }
+  },
+  "card": {
+    "openTool": { "en": "Open tool", "zh": "打开工具" },
+    "owner": { "en": "Owner", "zh": "负责团队" }
+  },
+  "empty": {
+    "noResults": {
+      "en": "No tools match your search or filter.",
+      "zh": "没有符合搜索或筛选条件的工具。"
+    },
+    "loadError": {
+      "en": "Unable to load the tool catalog. Please refresh the page.",
+      "zh": "无法加载工具目录，请刷新页面。"
+    }
+  },
+  "footer": {
+    "disclaimer": {
+      "en": "Lenovo-inspired enterprise style — not an official Lenovo brand page.",
+      "zh": "联想风格企业界面 — 非联想官方品牌页面。"
+    },
+    "version": { "en": "Version", "zh": "版本" }
+  }
+}
