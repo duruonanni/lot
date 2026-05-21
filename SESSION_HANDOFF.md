@@ -6,6 +6,7 @@ Last updated: 2026-05-21
 ## Current State
 
 - **M0–M3 complete:** project docs, static bilingual page, seed tool, Netlify deploy, add-tool playbook
+- **GitHub ↔ Netlify:** linked (`duruonanni/lot`, branch `main`); production deploy from commit `a23334f` verified 2026-05-21
 - **Live site:** https://lot-tool-gate.netlify.app
 - **Netlify site id:** `6f38532b-8c70-494e-83b5-ecbaea8ef4e0`
 - **Repo:** https://github.com/duruonanni/lot
@@ -28,14 +29,19 @@ Last updated: 2026-05-21
 **Admin:** https://app.netlify.com/projects/lot-tool-gate  
 **Site id:** `6f38532b-8c70-494e-83b5-ecbaea8ef4e0`
 
-### GitHub continuous deployment (optional next step)
+### GitHub continuous deployment
 
-CLI deploy is live. To enable auto-deploy on git push:
+**Status:** linked and active.
 
-1. Netlify dashboard → **lot-tool-gate** → **Project configuration** → **Build & deploy** → **Continuous deployment**
-2. Link repository **`duruonanni/lot`**, branch **`main`**
-3. Confirm build command `npm run build`, publish directory `.`
-4. Push commits to `main` to trigger redeploys
+| Setting | Value |
+|---------|-------|
+| Repository | `duruonanni/lot` |
+| Branch | `main` |
+| Build command | `npm run build` |
+| Publish directory | `.` |
+| Latest git deploy | commit `a23334f` (2026-05-21) |
+
+Push to `main` triggers a Netlify build automatically. A build hook (`github-main`) is also configured for manual/API triggers.
 
 ## Daily Commands
 
@@ -50,11 +56,9 @@ See README **Add a tool** section. Edit `data/tools.json`, update `meta.lastUpda
 
 ## Next Actions
 
-1. Connect GitHub repo in Netlify dashboard for continuous deployment on push
-2. Commit and push current project files to `main`
-3. Add more tools as DT delivers them (BE10 extractor candidate for M4)
+1. Add more tools as DT delivers them (edit `data/tools.json`; see README **Add a tool**)
+2. (Optional) BE10 Belgium extractor entry when hosted URL is confirmed (M4 backlog)
 
 ## Blockers
 
-- None for local development
-- Netlify CD requires user to authorize GitHub repo in Netlify dashboard
+- None
