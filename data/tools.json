@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-21",
+    "lastUpdated": "2026-05-22",
     "maintainer": "DT"
   },
   "tools": [
@@ -19,6 +19,22 @@
         "zh": "在浏览器本地校验 EaaS 发票 PDF 并导出 Excel。"
       },
       "tags": ["pdf", "validation", "offline-capable"]
+    },
+    {
+      "id": "lgfs-pricing",
+      "category": "analysis",
+      "status": "pilot",
+      "url": "https://lgfspricing.netlify.app/",
+      "owner": "DT",
+      "name": {
+        "en": "LGFS Price Grid Calculator",
+        "zh": "LGFS 定价网格计算器"
+      },
+      "summary": {
+        "en": "Lease pricing, global rate tables, PDF quote import, and approval workflow for LGFS deals.",
+        "zh": "LGFS 租赁定价、全球利率表、PDF 报价导入与审批流程。"
+      },
+      "tags": ["pricing", "rates", "pdf", "supabase"]
     }
   ]
 }

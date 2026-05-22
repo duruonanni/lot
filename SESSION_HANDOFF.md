@@ -1,7 +1,7 @@
 # Session Handoff — LGFS LOT AI Tool Gate
 
 Status: Active  
-Last updated: 2026-05-21
+Last updated: 2026-05-22
 
 ## Current State
 
@@ -21,7 +21,7 @@ Last updated: 2026-05-21
 | Content SSOT | `data/tools.json`, `data/i18n.json` |
 | Build | `npm run build` → `scripts/sync_version.mjs` |
 | Deploy config | `netlify.toml` (publish `.`, command `npm run build`) |
-| Seed tool | Invoice Extractor → `https://invoice-extractor-tool.netlify.app` |
+| Catalog tools | Invoice Extractor → `https://invoice-extractor-tool.netlify.app`; LGFS Price Grid → `https://lgfspricing.netlify.app/` |
 
 ## Netlify Go-Live
 
@@ -56,8 +56,10 @@ See README **Add a tool** section. Edit `data/tools.json`, update `meta.lastUpda
 
 ## Next Actions
 
-1. Add more tools as DT delivers them (edit `data/tools.json`; see README **Add a tool**)
-2. (Optional) BE10 Belgium extractor entry when hosted URL is confirmed (M4 backlog)
+1. Push `main` on `duruonanni/lot` to publish LGFS Price Grid catalog entry (local change ready 2026-05-22)
+2. Redeploy `LGFSPricing_Project` to Netlify so the header **← Tool Gate** link goes live
+3. Add more tools as DT delivers them (edit `data/tools.json`; see README **Add a tool**)
+4. (Optional) BE10 Belgium extractor entry when hosted URL is confirmed (M4 backlog)
 
 ## Blockers
 
