@@ -6,7 +6,7 @@ Last updated: 2026-05-22
 ## Current State
 
 - **M0–M3 complete:** project docs, static bilingual page, seed tool, Netlify deploy, add-tool playbook
-- **GitHub ↔ Netlify:** linked (`duruonanni/lot`, branch `main`); production deploy from commit `a23334f` verified 2026-05-21
+- **GitHub ↔ Netlify:** linked (`duruonanni/lot`, branch `main`); production deploy from commit `f248e17` pushed 2026-05-22
 - **Live site:** https://lot-tool-gate.netlify.app
 - **Netlify site id:** `6f38532b-8c70-494e-83b5-ecbaea8ef4e0`
 - **Repo:** https://github.com/duruonanni/lot
@@ -39,7 +39,7 @@ Last updated: 2026-05-22
 | Branch | `main` |
 | Build command | `npm run build` |
 | Publish directory | `.` |
-| Latest git deploy | commit `a23334f` (2026-05-21) |
+| Latest git deploy | commit `f248e17` (2026-05-22) |
 
 Push to `main` triggers a Netlify build automatically. A build hook (`github-main`) is also configured for manual/API triggers.
 
@@ -56,7 +56,7 @@ See README **Add a tool** section. Edit `data/tools.json`, update `meta.lastUpda
 
 ## Next Actions
 
-1. Push `main` on `duruonanni/lot` to publish LGFS Price Grid catalog entry (local change ready 2026-05-22)
+1. Confirm Netlify CD for commit `f248e17` — live site shows LGFS Price Grid card
 2. Redeploy `LGFSPricing_Project` to Netlify so the header **← Tool Gate** link goes live
 3. Add more tools as DT delivers them (edit `data/tools.json`; see README **Add a tool**)
 4. (Optional) BE10 Belgium extractor entry when hosted URL is confirmed (M4 backlog)
