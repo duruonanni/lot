@@ -1,7 +1,7 @@
 # Decisions — LGFS LOT AI Tool Gate
 
 Status: Active  
-Last updated: 2026-05-21
+Last updated: 2026-05-28
 
 ## D001 — Static JSON as content SSOT
 
@@ -54,3 +54,13 @@ Last updated: 2026-05-21
 **Decision:** Pure static site — no serverless backend.
 
 **Rationale:** Directory page has no server-side needs; keeps deploy and maintenance minimal.
+
+---
+
+## D007 — One Netlify site per tool (gate is catalog only)
+
+**Decision:** New tools are registered in `data/tools.json` with their **existing** production URL. Each tool repo builds and deploys to its **own** Netlify site; this repo does not host tool SPAs under subpaths.
+
+**Rationale:** Avoids coupling releases, Identity scopes, and asset `base` paths across unrelated apps (Invoice Extractor vs pricing vs buyout).
+
+**Workflow:** Append JSON entry → `npm run build` && `npm run preview` → push `lot` repo only. First registrations: `invoice-extractor`, `lgfs-pricing`, `buyout-rv-tool` (2026-05-28).

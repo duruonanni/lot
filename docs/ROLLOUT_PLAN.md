@@ -1,7 +1,7 @@
 # LGFS LOT AI Tool Gate — Rollout Plan
 
 Status: Active (M0–M1 implemented; M2 Netlify connection pending)  
-Last updated: 2026-05-21  
+Last updated: 2026-05-28  
 Project type: enterprise
 
 ---
@@ -232,8 +232,10 @@ Add a fixed **“Add a tool”** workflow in this document or `README.md` for fu
 1. User provides: `name (EN/ZH)`, `url`, `summary (EN/ZH)`, `category`, `status`, optional `tags`
 2. AI appends entry to `data/tools.json` (validate unique `id`, URL reachable)
 3. Update `meta.lastUpdated`
-4. Local preview to confirm card renders
-5. User confirms → commit + push → Netlify auto-publishes
+4. `npm run build` && `npm run preview` — confirm card renders (EN/ZH)
+5. User confirms → commit + push **this repo only** → Netlify auto-publishes the gate (tool app deploys from its own repo)
+
+**Catalog as of 2026-05-28:** `invoice-extractor`, `lgfs-pricing`, `buyout-rv-tool` (each URL is an independent Netlify site).
 
 **Prompt template:**
 

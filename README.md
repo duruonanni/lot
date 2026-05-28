@@ -47,6 +47,8 @@ First-time Netlify setup: see [SESSION_HANDOFF.md](./SESSION_HANDOFF.md) § Netl
 
 Use this workflow when adding a new AI tool to the directory.
 
+**Architecture:** Each tool is a **separate** GitHub repo and Netlify site. The gate (`lot-tool-gate.netlify.app`) only stores links and copy in `data/tools.json` — do not merge tool builds into this repo. Registered examples: `invoice-extractor`, `lgfs-pricing`, `buyout-rv-tool`.
+
 ### 1. Gather inputs
 
 | Field | Required | Example |
@@ -68,10 +70,11 @@ Append a new object to the `tools` array and update `meta.lastUpdated` to today'
 ### 3. Preview locally
 
 ```bash
+npm run build
 npm run preview
 ```
 
-Confirm the card renders in both English and Chinese.
+Open http://localhost:3456 — confirm the card renders in **English and Chinese**, KPI tool count updates, and **Open tool** opens the live URL.
 
 ### 4. Publish
 

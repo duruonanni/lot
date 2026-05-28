@@ -1,7 +1,7 @@
 # Product Requirements — LGFS LOT AI Tool Gate
 
 Status: Active  
-Last updated: 2026-05-21  
+Last updated: 2026-05-28  
 Project type: enterprise
 
 ## Purpose
@@ -27,7 +27,9 @@ A public static web page that guides the LGFS LOT team to AI tools built by the 
 ### Content updates (M3+)
 
 - Maintainers add tools by editing `data/tools.json` (see README **Add a tool** playbook)
+- Each listed tool keeps its **own** Netlify deployment; the gate stores metadata and outbound links only
 - No layout code changes required for new entries
+- **Current catalog (2026-05-28):** Invoice Extractor, LGFS Price Grid, Equipment Buyout RV Quote Tool
 
 ## Non-Goals (M1)
 

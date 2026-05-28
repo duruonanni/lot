@@ -1,1 +1,1 @@
-window.LOT_GATE_VERSION = "0.1.5";
+window.LOT_GATE_VERSION = "0.1.6";

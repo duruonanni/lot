@@ -1,6 +1,6 @@
 {
   "name": "lgfs-lot-tool-gate",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "description": "LGFS LOT AI tool gate - bilingual static directory for DT-built AI tools",
   "scripts": {

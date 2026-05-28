@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-22",
+    "lastUpdated": "2026-05-28",
     "maintainer": "DT"
   },
   "tools": [
@@ -35,6 +35,22 @@
         "zh": "LGFS 租赁定价、全球利率表、PDF 报价导入与审批流程。"
       },
       "tags": ["pricing", "rates", "pdf", "supabase"]
+    },
+    {
+      "id": "buyout-rv-tool",
+      "category": "analysis",
+      "status": "pilot",
+      "url": "https://buyout-rv-tool.netlify.app/",
+      "owner": "DT",
+      "name": {
+        "en": "Equipment Buyout RV Quote Tool",
+        "zh": "设备买断 RV 报价工具"
+      },
+      "summary": {
+        "en": "Tranche ID parsing, RV matrix lookup (V1/V2), buyout price calculation, and EN/ZH customer emails (single entry and Excel batch).",
+        "zh": "解析 Tranche ID、RV 矩阵查询（V1/V2）、买断价计算，并生成中英文客户邮件（单笔与 Excel 批量）。"
+      },
+      "tags": ["buyout", "rv", "excel", "offline-capable"]
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Session Handoff — LGFS LOT AI Tool Gate
 
 Status: Active  
-Last updated: 2026-05-22
+Last updated: 2026-05-28
 
 ## Current State
 
@@ -21,7 +21,7 @@ Last updated: 2026-05-22
 | Content SSOT | `data/tools.json`, `data/i18n.json` |
 | Build | `npm run build` → `scripts/sync_version.mjs` |
 | Deploy config | `netlify.toml` (publish `.`, command `npm run build`) |
-| Catalog tools | Invoice Extractor → `https://invoice-extractor-tool.netlify.app`; LGFS Price Grid → `https://lgfspricing.netlify.app/` |
+| Catalog tools | Invoice Extractor → `https://invoice-extractor-tool.netlify.app`; LGFS Price Grid → `https://lgfspricing.netlify.app/`; Buyout RV → `https://buyout-rv-tool.netlify.app/` |
 
 ## Netlify Go-Live
 
@@ -52,13 +52,18 @@ npm run preview    # local static server on http://localhost:3456
 
 ## Add a Tool (quick reference)
 
-See README **Add a tool** section. Edit `data/tools.json`, update `meta.lastUpdated`, preview, commit, push.
+**Standard for every new hosted tool:** each app keeps its **own** Netlify site and repo; the gate only registers metadata in `data/tools.json` (same pattern as Invoice Extractor, LGFS Pricing, Buyout RV). See README **Add a tool**.
+
+1. Gather URL + bilingual name/summary + `category` + `status` (+ optional `tags`)
+2. Append to `data/tools.json`; set `meta.lastUpdated` (ISO date)
+3. `npm run build` && `npm run preview` → verify EN/ZH cards and **Open tool** link
+4. Commit + push `main` on `duruonanni/lot` → Netlify redeploys gate only (tool repos deploy separately)
 
 ## Next Actions
 
-1. Confirm Netlify CD for commit `f248e17` — live site shows LGFS Price Grid card
-2. Redeploy `LGFSPricing_Project` to Netlify so the header **← Tool Gate** link goes live
-3. Add more tools as DT delivers them (edit `data/tools.json`; see README **Add a tool**)
+1. Confirm Netlify CD after this push — live gate shows Buyout RV card (3 tools)
+2. Redeploy `LGFSPricing_Project` to Netlify if **← Tool Gate** header link is still pending
+3. Add future tools via `data/tools.json` only (no gate layout changes; see D007)
 4. (Optional) BE10 Belgium extractor entry when hosted URL is confirmed (M4 backlog)
 
 ## Blockers
